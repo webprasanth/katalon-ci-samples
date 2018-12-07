@@ -8,7 +8,7 @@
     "repository": "https://github.com/datquach/katalon-ci-samples.git",
     "image": "katalonstudio/katalon",
     "buildpacks": [
-        { "url": "heroku/jvm" }
+        { "url": "heroku-community/apt" }
       ],
     "environments": {
       "test": {
