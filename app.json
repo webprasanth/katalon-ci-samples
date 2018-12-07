@@ -8,11 +8,12 @@
     "repository": "https://github.com/datquach/katalon-ci-samples.git",
     "image": "katalonstudio/katalon",
     "buildpacks": [
-        { "url": "heroku/jvm" }
+        { "url": "heroku/java" }
       ],
     "environments": {
       "test": {
         "scripts": {
+            "test-setup": "apt -y install docker",
             "test": "docker run -t --rm -v '$(pwd)':/katalon/katalon/source katalonstudio/katalon katalon-execute.sh -browserType='Chrome' -retry=0 -statusDelay=15 -testSuitePath='Test Suites/TS_RegressionTest'"
           }
       }
