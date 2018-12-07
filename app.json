@@ -13,7 +13,7 @@
     "environments": {
       "test": {
         "scripts": {
-            "test": "katalon-execute.sh -browserType='Chrome' -retry=0 -statusDelay=15 -testSuitePath='Test Suites/TS_RegressionTest'"
+            "test": "ls -l "
           }
       }
     }
