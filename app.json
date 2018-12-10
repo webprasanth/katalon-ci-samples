@@ -13,7 +13,7 @@
     "environments": {
       "test": {
         "scripts": {    
-            "test": "apt update"
+            "test": "sudo apt update"
           }
       }
     }
