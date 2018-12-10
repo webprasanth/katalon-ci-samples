@@ -13,7 +13,7 @@
     "environments": {
       "test": {
         "scripts": {    
-            "test": "ls -la /"
+            "test": "apt update"
           }
       }
     }
