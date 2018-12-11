@@ -1,0 +1,7 @@
+build:
+  docker:
+    worker: Dockerfile
+release:
+  command:
+    -  katalon-execute.sh -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/TS_RegressionTest"
+  image: web
